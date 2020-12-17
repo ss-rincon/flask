@@ -1,0 +1,44 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+
+<div class="columns">
+    <!-- Primera Columna -->
+    <div class="column is-two-thirds">
+        <img src="static/imagenes/diseno.png" alt="">
+    </div>
+    <!-- Segunda Columna -->
+    <div class="column">
+        <img src="static/imagenes/logo1.png" alt="">
+        <img class="this-icon" src="static/imagenes/usuario.png" alt="">
+        <form action="/index" method="POST">
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input is-medium" type="email" placeholder="Correo electrónico">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope-open"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fa fa-check"></i>
+                  </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input is-medium" type="password" placeholder="Contraseña">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-lock"></i>
+                  </span>
+                </p>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Ingresar</button>
+
+        </form>
+    </div>
+   
+
+</div>
+
+
+
+{% endblock %}

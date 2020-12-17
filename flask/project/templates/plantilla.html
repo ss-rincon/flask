@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Auth Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Pequeños arreglos para las imagenes -->
+    <style>
+        div img{
+            padding: 15px;
+            width: 100%;
+        }
+        .hero-body{
+            padding-top: 0px;
+            background-image: url("static/css/fondo2.jpg");
+        }
+
+        .this-icon{
+            width: 75px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <section class="hero is-primary is-fullheight">
+
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="#" class="navbar-item">
+                                Home
+                            </a>
+
+                            <a href="#" class="navbar-item">
+                                Profile
+                            </a>
+
+                            <a href="#" class="navbar-item">
+                                Login
+                            </a>
+                            <a href="#" class="navbar-item">
+                                Sign Up
+                            </a>
+
+                            <a href="#" class="navbar-item">
+                                Logout
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container-fluid has-text-centered">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
